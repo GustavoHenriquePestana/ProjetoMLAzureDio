@@ -1,0 +1,40 @@
+# Predição de Preço de Casas com Regressão no Azure ML
+
+Este projeto faz parte de um desafio de aprendizado prático usando o Microsoft Azure Machine Learning. O objetivo foi treinar um modelo de regressão para prever o preço de casas com base em características do imóvel.
+
+---
+
+## 🚀 Etapas do Projeto
+
+### 1. Coleta e Criação do Ativo de Dados
+Utilizei uma base pública com informações de imóveis, como número de quartos, banheiros, área construída, etc. Os dados foram carregados diretamente pelo portal do Azure ML.
+
+### 2. Criação da Tarefa de Regressão
+Configurei uma tarefa automatizada de regressão com as seguintes características:
+- **Target (alvo):** Preço da casa
+- **Técnicas de ML:** Regressão Linear, Decision Tree, etc. (Azure escolhe automaticamente)
+- **Divisão dos dados:** 80% treino, 20% teste
+- **Encerramento automático:** ativado para otimizar tempo
+- **Métrica principal:** R² Score
+
+### 3. Resultados
+O experimento foi finalizado com sucesso! O modelo apresentou um bom desempenho na métrica escolhida. (veja imagem abaixo 👇)
+
+![Task finalizada](./imagens/task-finalizada.png)
+
+---
+
+## ⚠️ Sobre a Implantação
+
+Apesar da tarefa ter sido executada com sucesso, a tentativa de implantação do modelo falhou por conta de **limitações no provedor de recursos da conta Azure** utilizada. Foram feitas tentativas de:
+
+- Registro manual do provedor `Microsoft.MachineLearningServices`
+- Troca de workspaces
+- Testes em diferentes regiões
+
+Mesmo assim, a restrição persistiu. Por isso, esta entrega não possui ponto de extremidade implantado no Azure.
+
+
+## 👨‍💻 Feito por
+
+**Gustavo**
