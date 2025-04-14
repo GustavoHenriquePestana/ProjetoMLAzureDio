@@ -1,0 +1,35 @@
+artifact_path: outputs/mlflow-model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.9.21
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: pickle
+    sklearn_version: 1.5.1
+metadata:
+  azureml.base_image: mcr.microsoft.com/azureml/curated/ai-ml-automl:19
+  azureml.engine: automl
+mlflow_version: 2.15.1
+model_size_bytes: 571341
+model_uuid: d4707c5e58e24582bd41e2ecb435a898
+run_id: regressao-casas_9
+signature:
+  inputs: '[{"type": "float", "name": "crim", "required": true}, {"type": "float",
+    "name": "zn", "required": true}, {"type": "float", "name": "indus", "required":
+    true}, {"type": "integer", "name": "chas", "required": true}, {"type": "float",
+    "name": "nox", "required": true}, {"type": "float", "name": "rm", "required":
+    true}, {"type": "float", "name": "age", "required": true}, {"type": "float", "name":
+    "dis", "required": true}, {"type": "integer", "name": "rad", "required": true},
+    {"type": "integer", "name": "tax", "required": true}, {"type": "float", "name":
+    "ptratio", "required": true}, {"type": "float", "name": "b", "required": true},
+    {"type": "float", "name": "lstat", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2025-04-14 17:28:14.963077'
