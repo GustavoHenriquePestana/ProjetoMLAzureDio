@@ -18,10 +18,7 @@ Configurei uma tarefa automatizada de regressão com as seguintes característic
 - **Métrica principal:** R² Score
 
 ### 3. Resultados
-O experimento foi finalizado com sucesso! O modelo apresentou um bom desempenho na métrica escolhida. (veja imagem abaixo 👇)
-
-![Task finalizada](./imagens/task-finalizada.png)
-
+O experimento foi finalizado com sucesso! O modelo apresentou um bom desempenho na métrica escolhida.
 ---
 
 ## ⚠️ Sobre a Implantação
